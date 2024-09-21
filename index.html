@@ -16,6 +16,13 @@
             margin: 0;
             padding: 0;
             color: #fff; /* White text */
+            user-select: none; /* Disable text selection */
+        }
+
+        /* Disable text copying */
+        body::-moz-user-select: none; /* Firefox */
+        body::selection {
+            background: transparent; /* Disable selection background color */
         }
 
         /* Container for all content */
@@ -139,6 +146,34 @@
             }
         }
     </style>
+
+    <script>
+        function updateGreeting() {
+            const now = new Date();
+            const hours = now.getHours();
+            let greetingText;
+
+            if (hours < 12) {
+                greetingText = 'Good Morning';
+            } else if (hours < 18) {
+                greetingText = 'Good Afternoon';
+            } else {
+                greetingText = 'Good Evening';
+            }
+
+            document.getElementById('greeting').innerText = greetingText;
+        }
+
+        // Wait for the DOM to fully load before running the updateGreeting function
+        window.onload = function() {
+            updateGreeting();
+
+            // Disable right-click functionality
+            document.addEventListener('contextmenu', function (e) {
+                e.preventDefault();
+            }, false);
+        };
+    </script>
 </head>
 <body>
 
@@ -162,29 +197,9 @@
     <button class="feedback-btn" onclick="window.location.href='mailto:rt578370@hotmail.com'">💬</button>
 
     <footer>
-        Website designed and developed by ROSHAN THAKUR
+        Website designed and developed by ROSHAN THAKUR<br>
+        © 2024 Roshan Thakur. All rights reserved.
     </footer>
-
-    <script>
-        function updateGreeting() {
-            const now = new Date();
-            const hours = now.getHours();
-            let greetingText;
-
-            if (hours < 12) {
-                greetingText = 'Good Morning';
-            } else if (hours < 18) {
-                greetingText = 'Good Afternoon';
-            } else {
-                greetingText = 'Good Evening';
-            }
-
-            document.getElementById('greeting').innerText = greetingText;
-        }
-
-        // Update greeting on page load
-        updateGreeting();
-    </script>
 
 </body>
 </html>
