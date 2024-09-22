@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Subject Links</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, pink, blue); /* Pink to green gradient background */
+            margin: 0;
+            padding: 0;
+            color: white; /* White text */
+        }
+
+        /* Center content */
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+            padding: 20px; /* Add padding for better spacing */
+        }
+
+        /* Button styles */
+        .subject-btn {
+            background: linear-gradient(to right, orange, pink);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 20px;
+            margin: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            text-decoration: none;
+            width: 250px; /* Fixed width for uniformity */
+        }
+
+        .subject-btn:hover {
+            transform: translateY(-5px); /* Button lift animation */
+        }
+
+        /* Footer styles */
+        footer {
+            margin-top: 50px;
+            font-size: 14px;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Disable right click and text copying */
+        body {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        /* Disable right-click */
+        document.addEventListener('contextmenu', event => event.preventDefault());
+
+        /* Desktop optimization */
+        @media (min-width: 1024px) {
+            .container {
+                flex-direction: row; /* Horizontal layout on desktop */
+                flex-wrap: wrap; /* Allow wrapping for better spacing */
+                justify-content: center; /* Center align buttons */
+            }
+
+            .subject-btn {
+                padding: 20px 40px; /* Larger padding */
+                font-size: 20px; /* Larger font size */
+                margin: 15px; /* Increased margin for spacing */
+            }
+
+            footer {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Buttons for subjects -->
+        <a href="https://mega.nz/file/UmFAiCRS#iXJpzWVn4Q8FnSpBivtDYlPmQQFCHmd_jtHq5EX7crI" target="_blank" class="subject-btn">SCIENCE</a>
+        <a href="https://mega.nz/file/crM2nQoZ#HAcA8inpZz7tkZTnbVxwMqQ4TEUx84CZz6sMZnjHq88" target="_blank" class="subject-btn">MATHS</a>
+        <a href="https://mega.nz/file/531w0RCT#pBRxuFlgfqd7btWQYkq9CmWsez-HjUR81Mb6tGZOSFM" target="_blank" class="subject-btn">SOCIAL SCIENCE</a>
+        <a href="https://mega.nz/file/8ndmXSRR#jgCSznSTujPS8akJDkRzbFxWsxPyG6UUGgBF5KMWPi0" target="_blank" class="subject-btn">ENGLISH</a>
+        <a href="https://mega.nz/file/w3F13RKD#KDW0M6bMP-AsaqgIQpZrnFKAI0gBBVBvJp41R4xlLMU" target="_blank" class="subject-btn">ENGLISH IL</a>
+        <a href="https://mega.nz/file/s60WCRoR#kWjvJ-iDJ_zLN2sQFlU6iqq6qiExpsWlylxx59-_1V0" target="_blank" class="subject-btn">GEOGRAPHY (IL)</a>
+        <a href="https://mega.nz/file/hj9wEChB#RYK7QAkg7mhBEbbTbjknDhptpzUigF7uN8Nry4Cl1Jw" target="_blank" class="subject-btn">HINDI (IL)</a>
+        <a href="index2.html" class="subject-btn">Class 10th 2024 Pre Final Question Paper</a> <!-- New button -->
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        This page was designed and developed by Roshan Thakur.<br>
+        © 2024 Roshan Thakur. All rights reserved.
+    </footer>
+
+    <script>
+        // Disable right-click functionality
+        document.addEventListener('contextmenu', event => event.preventDefault());
+    </script>
+</body>
+</html>
