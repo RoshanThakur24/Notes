@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Follow Roshan Thakur</title>
+
+    <!-- Link the external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+
+    <script>
+        function updateGreeting() {
+            const now = new Date();
+            const hours = now.getHours();
+            let greetingText;
+
+            if (hours < 12) {
+                greetingText = 'Good Morning';
+            } else if (hours < 18) {
+                greetingText = 'Good Afternoon';
+            } else {
+                greetingText = 'Good Evening';
+            }
+
+            document.getElementById('greeting').innerText = greetingText;
+        }
+
+        window.onload = function() {
+            updateGreeting();
+
+            // Disable right-click
+            document.addEventListener('contextmenu', function (e) {
+                e.preventDefault();
+            }, false);
+        };
+    </script>
+</head>
+<body>
+
+    <!-- Header with Background Image -->
+    <div class="header-background">
+        <div id="greeting"></div>
+
+        <h1>Follow Me on Instagram</h1>
+        <button class="follow-btn" onclick="window.open('https://www.instagram.com/Roshan_Thakur24', '_blank')">Click Here to Follow</button>
+    </div>
+
+    <!-- Content Section with White Background -->
+    <div class="content">
+        <div class="menu">
+            <!-- Class 11 Question Paper button -->
+            <button onclick="window.open('https://mega.nz/folder/QvEF3ASB#-BUcUqS5bQlJdrYJkCUJHQ', '_blank')">Class 11 Question Paper</button>
+            <!-- Class 10th 2024 Pre Final Question Paper button -->
+            <button onclick="window.location.href='index2.html'">Class 10th 2024 Pre Final Question Paper</button>
+        </div>
+    </div>
+
+    <!-- Feedback Button -->
+    <button class="feedback-btn" onclick="window.location.href='mailto:rt578370@hotmail.com'">💬</button>
+
+    <footer>
+        Website designed and developed by ROSHAN THAKUR<br>
+        © 2024 Roshan Thakur. All rights reserved.
+    </footer>
+
+</body>
+</html>
