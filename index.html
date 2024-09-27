@@ -8,11 +8,6 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-image: url('photo-1540198163009-7afda7da2945.jpeg');
-            background-size: cover; /* Make the background cover the entire page */
-            background-position: center; /* Center the background image */
-            background-repeat: no-repeat; /* Ensure no repetition */
-            background-attachment: fixed; /* Fix the background during scroll */
             margin: 0;
             padding: 0;
             color: #fff; /* White text */
@@ -31,15 +26,25 @@
             scrollbar-width: none;  /* Firefox */
         }
 
-        /* Container for all content */
-        .container {
-            padding: 20px;
-            text-align: center;
-            min-height: 100vh;
+        /* Background image area */
+        .header-background {
+            background-image: url('photo-1540198163009-7afda7da2945.jpeg');
+            background-size: cover; /* Make the background cover the entire section */
+            background-position: center; /* Center the background image */
+            background-repeat: no-repeat; /* Ensure no repetition */
+            height: 600px; /* Set height for image area */
             display: flex;
             flex-direction: column;
-            justify-content: flex-start; /* Start content from top */
-            scroll-behavior: smooth; /* Enable smooth scrolling */
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Gradient background */
+        .gradient-background {
+            background: linear-gradient(to bottom, #0000FF, #00FF00); /* Dark blue to light green */
+            padding: 40px 0;
+            min-height: 100vh; /* Make sure it takes up the remaining page */
         }
 
         /* Greeting without animation */
@@ -50,7 +55,7 @@
             -webkit-background-clip: text;
             color: transparent;
             text-shadow: 0 0 20px #FF4500, 0 0 30px #8A2BE2; /* Glowing effect */
-            margin-top: 50px; /* Keeps it at the top */
+            margin-top: 20px; /* Keeps it at the top */
         }
 
         /* Button Styles */
@@ -63,7 +68,7 @@
             border-radius: 50px;
             cursor: pointer;
             transition: transform 0.2s ease;
-            margin-bottom: 30px;
+            margin-top: 20px;
         }
 
         .follow-btn:hover {
@@ -119,19 +124,14 @@
 
         /* Footer Styles */
         footer {
-            margin-top: 50px;
             font-size: 14px;
             color: #fff;
-            padding-bottom: 20px;
+            padding: 20px 0;
             text-align: center; /* Center the text */
         }
 
         /* Responsive and desktop-optimized styles */
         @media (min-width: 768px) {
-            .container {
-                padding: 80px;
-            }
-
             #greeting {
                 font-size: 40px;
             }
@@ -184,14 +184,16 @@
 </head>
 <body>
 
-    <!-- Main Content -->
-    <div class="container">
-        <!-- Real-time Greeting -->
+    <!-- Header with Background Image -->
+    <div class="header-background">
         <div id="greeting"></div>
 
         <h1>Follow Me on Instagram</h1>
         <button class="follow-btn" onclick="window.open('https://www.instagram.com/Roshan_Thakur24', '_blank')">Click Here to Follow</button>
+    </div>
 
+    <!-- Gradient Background Section -->
+    <div class="gradient-background">
         <div class="menu">
             <!-- New Class 11 Question Paper button -->
             <button onclick="window.open('https://mega.nz/folder/QvEF3ASB#-BUcUqS5bQlJdrYJkCUJHQ', '_blank')">Class 11 Question Paper</button>
