@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    user-select: none;
+    background-color: white;
+}
+
+/* Background image area */
+.header-background {
+    background-image: url('photo-1540198163009-7afda7da2945.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-blend-mode: lighten;
+}
+
+/* Content area with white background */
+.content {
+    background-color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+/* Greeting */
+#greeting {
+    font-size: 32px;
+    font-weight: bold;
+    background: linear-gradient(to right, #8A2BE2, #FF4500);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 20px #FF4500, 0 0 30px #8A2BE2;
+    margin-top: 20px;
+}
+
+/* Instagram Follow Button */
+.follow-btn {
+    background-color: #E1306C;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-size: 18px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    margin-top: 20px;
+}
+
+.follow-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Menu Buttons */
+.menu {
+    margin-top: 40px;
+}
+
+.menu button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-size: 16px;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.menu button:hover {
+    background-color: #2980b9;
+    transform: translateY(-5px);
+}
+
+/* Feedback Button */
+.feedback-btn {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: #FF6347;
+    color: white;
+    border: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    transition: transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feedback-btn:hover {
+    transform: scale(1.1);
+    background-color: #FF4500;
+}
+
+/* Footer */
+footer {
+    font-size: 14px;
+    color: black;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
+    #greeting {
+        font-size: 40px;
+    }
+
+    .follow-btn {
+        padding: 20px 40px;
+        font-size: 20px;
+    }
+
+    .menu button {
+        padding: 20px 40px;
+        font-size: 18px;
+    }
+
+    .feedback-btn {
+        width: 70px;
+        height: 70px;
+        font-size: 20px;
+    }
+}
