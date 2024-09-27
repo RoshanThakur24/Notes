@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Follow Roshan Thakur</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('photo-1540198163009-7afda7da2945.jpeg');
+            background-size: cover; /* Make the background cover the entire page */
+            background-position: center; /* Center the background image */
+            background-repeat: no-repeat; /* Ensure no repetition */
+            background-attachment: fixed; /* Fix the background during scroll */
+            margin: 0;
+            padding: 0;
+            color: #fff; /* White text */
+            user-select: none; /* Disable text selection */
+            overflow-y: scroll; /* Enable vertical scrolling */
+        }
+
+        /* Hide scrollbar for Chrome, Safari, and Opera */
+        body::-webkit-scrollbar {
+            width: 0;  /* Completely hide the scrollbar */
+        }
+
+        /* Hide scrollbar for IE, Edge, and Firefox */
+        body {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+
+        /* Container for all content */
+        .container {
+            padding: 20px;
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; /* Start content from top */
+            scroll-behavior: smooth; /* Enable smooth scrolling */
+        }
+
+        /* Greeting without animation */
+        #greeting {
+            font-size: 32px;
+            font-weight: bold;
+            background: linear-gradient(to right, #8A2BE2, #FF4500); /* Gradient from purple to orange */
+            -webkit-background-clip: text;
+            color: transparent;
+            text-shadow: 0 0 20px #FF4500, 0 0 30px #8A2BE2; /* Glowing effect */
+            margin-top: 50px; /* Keeps it at the top */
+        }
+
+        /* Button Styles */
+        .follow-btn {
+            background-color: #E1306C;
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            font-size: 18px;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+            margin-bottom: 30px;
+        }
+
+        .follow-btn:hover {
+            transform: scale(1.1);
+        }
+
+        /* Menu Buttons */
+        .menu {
+            margin-bottom: 30px;
+        }
+
+        .menu button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            font-size: 16px;
+            border-radius: 10px;
+            margin: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .menu button:hover {
+            background-color: #2980b9;
+            transform: translateY(-5px);
+        }
+
+        /* Feedback Button Style */
+        .feedback-btn {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            background-color: #FF6347;
+            color: white;
+            border: none;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 18px;
+            transition: transform 0.2s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .feedback-btn:hover {
+            transform: scale(1.1);
+            background-color: #FF4500;
+        }
+
+        /* Footer Styles */
+        footer {
+            margin-top: 50px;
+            font-size: 14px;
+            color: #fff;
+            padding-bottom: 20px;
+            text-align: center; /* Center the text */
+        }
+
+        /* Responsive and desktop-optimized styles */
+        @media (min-width: 768px) {
+            .container {
+                padding: 80px;
+            }
+
+            #greeting {
+                font-size: 40px;
+            }
+
+            .follow-btn {
+                padding: 20px 40px;
+                font-size: 20px;
+            }
+
+            .menu button {
+                padding: 20px 40px;
+                font-size: 18px;
+            }
+
+            .feedback-btn {
+                width: 70px;
+                height: 70px;
+                font-size: 20px;
+            }
+        }
+    </style>
+
+    <script>
+        function updateGreeting() {
+            const now = new Date();
+            const hours = now.getHours();
+            let greetingText;
+
+            if (hours < 12) {
+                greetingText = 'Good Morning';
+            } else if (hours < 18) {
+                greetingText = 'Good Afternoon';
+            } else {
+                greetingText = 'Good Evening';
+            }
+
+            document.getElementById('greeting').innerText = greetingText;
+        }
+
+        // Wait for the DOM to fully load before running the updateGreeting function
+        window.onload = function() {
+            updateGreeting();
+
+            // Disable right-click functionality
+            document.addEventListener('contextmenu', function (e) {
+                e.preventDefault();
+            }, false);
+        };
+    </script>
+</head>
+<body>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Real-time Greeting -->
+        <div id="greeting"></div>
+
+        <h1>Follow Me on Instagram</h1>
+        <button class="follow-btn" onclick="window.open('https://www.instagram.com/Roshan_Thakur24', '_blank')">Click Here to Follow</button>
+
+        <div class="menu">
+            <!-- New Class 11 Question Paper button -->
+            <button onclick="window.open('https://mega.nz/folder/QvEF3ASB#-BUcUqS5bQlJdrYJkCUJHQ', '_blank')">Class 11 Question Paper</button>
+            <!-- Existing Class 10th 2024 Pre Final Question Paper button -->
+            <button onclick="window.location.href='index2.html'">Class 10th 2024 Pre Final Question Paper</button>
+        </div>
+    </div>
+
+    <!-- Feedback Button -->
+    <button class="feedback-btn" onclick="window.location.href='mailto:rt578370@hotmail.com'">💬</button>
+
+    <footer>
+        Website designed and developed by ROSHAN THAKUR<br>
+        © 2024 Roshan Thakur. All rights reserved.
+    </footer>
+
+</body>
+</html>
