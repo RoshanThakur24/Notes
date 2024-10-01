@@ -7,7 +7,7 @@ body {
     background-color: grey;
 }
 
-/* Background image area */
+/* Header Background */
 .header-background {
     background-image: url('photo-1540198163009-7afda7da2945.jpeg');
     background-size: cover;
@@ -24,7 +24,7 @@ body {
 
 /* Content area with background image */
 .content {
-    background-image: url('https://github.com/RoshanThakur24/Notes/blob/main/Picsart_24-10-01_22-11-34-519.jpg?raw=true');
+    background-image: url('https://github.com/RoshanThakur24/Notes/blob/main/51d168508a753417ba097f437049e4c4.jpg?raw=true');
     background-size: cover;
     background-position: center;
     padding: 40px 0;
