@@ -22,11 +22,14 @@ body {
     background-blend-mode: lighten;
 }
 
-/* Content area with white background */
+/* Content area with background image */
 .content {
-    background-color: white;
+    background-image: url('https://github.com/RoshanThakur24/Notes/blob/main/Picsart_24-10-01_22-11-34-519.jpg?raw=true');
+    background-size: cover;
+    background-position: center;
     padding: 40px 0;
     text-align: center;
+    color: white; /* Ensure readability */
 }
 
 /* Greeting */
